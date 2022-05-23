@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 300px;
+  width:300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+
+/* footer */
+
+footer {
+  background: #03989e;
+  overflow-x: hidden;
+  padding: 5vmin 10vmin;
+}
+cd
+footer p > span {
+  color: #03989e;
+}
+
+footer p,
+footer span {
+  font-size: small;
+  color: white;
+}
+footer .col-md-5,
+.col-md-4 {
+  margin-bottom: 5vmin;
+}
+
+footer .col-md-5 h3 {
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+footer .col-md-4 h3 {
+  font-weight: 700;
+
+  color: white;
+  letter-spacing: 1px;
+}
+
+footer .col-md-3 h3 {
+  font-weight: 700;
+
+  color: white;
+  letter-spacing: 1px;
+}
+
+footer .column i {
+  padding: 0.6em;
+margin-right: 0.6em;
+  /* margin-right:10px ; */
+  color: white;
+  background-color: rgba(203, 234, 237, 0.1);
+font-size:20px;
+  border-radius: 50%;
+}
+
+footer .contact-info i {
+  padding: 0.6em;
+  color: white;
+  background-color: rgba(203, 234, 237, 0.1);
+  border-radius: 50%;
+  margin-bottom: 2vmin;
+  margin-right: 2vmin;
+}
+
+.card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.reviews{
+  padding: 0 !important;
+}
+
+.page-num{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-container{
+  
+  margin-top:30px;
+  padding:30px 50px;
+  /* border:2px solid black; */
+  box-shadow: 0px 1px 12px 0px grey;
+  /* border-radius:20px; */
+}
+.btn{
+  border-radius:10px;
+}
+
+
+/* landing page */
+.landing-navbar{
+  height:70px !important;
+  background: rgb(5, 33, 41) !important;
+
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #03989e;
+}
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.landing-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  display:table;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.landing-text {
+  font-family:'Montserrat', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-48%, -48%);
+  /* color: white !important; */
+}
+.landing-text h1{
+  color:white !important;
+}
+.landing-text h5{
+  color:white !important;
+}
+.landing-button {
+  border-radius: 25px;
+  background-color: teal;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+  border: 1px solid white;
+}
+
+.landing-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.landing-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+
+}
+
+.landing-button:hover span {
+  padding-right: 10px;
+
+}
+
+.landing-button:hover span:after {
+  opacity: 1;
+  right: 0;
+  
+}
